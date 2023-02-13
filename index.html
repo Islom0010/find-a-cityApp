@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find a city</title>
     <!-- SASS global -->
-    <link rel="stylesheet" href="./ctyles/style.scss" />
+    <link rel="stylesheet" href="./ctyles/style.css" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
@@ -24,29 +24,50 @@
         <section class="level container-fluid">
             <div class="container mt-5">
                 <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">First level</button>
-                    <button class="btn btn-primary" type="button">Second level</button>
-                    <button class="btn btn-primary" type="button">Third level</button>
+                    <button class="btn btn-primary" type="button" onclick="changeImg()" id="first">First level</button>
+                    <button class="btn btn-primary" type="button" id="second">Second level</button>
+                    <button class="btn btn-primary" type="button" id="third">Third level</button>
                 </div>
             </div>
         </section>
-        <section class="city container-fluid">
+        <section class="container-fluid d-none" id="city">
             <div class="container">
-                <div class="card w-100  my-3 px-3" style="width: 18rem;">
-                    <img src="./assets/imgs/question.jpg" class="card-img-top my-3" alt="...">
+                <div class="card w-50  my-3 mx-auto px-3" style="width: 18rem;">
+                    <h3 class="text-center my-2 ">Guess which city is it ?</h3>
+                    <div class="row mt-3" id="step">
+                        <div class="col-lg-2 text-center">
+                            <a href="" class="bg-dark rounded-circle text-decoration-none text-success px-lg-2" id="1">*</a>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                            <a href="" class="bg-dark  rounded-circle text-decoration-none text-success px-lg-2" id="2">*</a>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                            <a href="" class="bg-dark  rounded-circle text-decoration-none text-success px-lg-2" id="3">*</a>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                            <a href="" class="bg-dark  rounded-circle text-decoration-none text-success px-lg-2" id="4">*</a>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                            <a href="" class="bg-dark  rounded-circle text-decoration-none text-success px-lg-2" id="5">*</a>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                            <a href="" class="bg-dark  rounded-circle text-decoration-none text-success px-lg-2" id="6">*</a>
+                        </div>
+                    </div>
+                    <img src="./assets/imgs/question.jpg" class="card-img my-3" id="card-image" alt="..." height="500px">
                     <div class="card-body ">
                         <div class="row g-3">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-outline-primary w-100">Go somewhere</a>
+                                <button href="#" class="btn btn-outline-primary w-100" id="first-city">********************</button>
                             </div>
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-outline-primary w-100">Go somewhere</a>
+                                <button href="#" class="btn btn-outline-primary w-100" id="second-city">********************</button>
                             </div>
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-outline-primary w-100">Go somewhere</a>
+                                <button class="btn btn-outline-primary w-100" id="third-city">********************</button>
                             </div>
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-outline-primary w-100">Go somewhere</a>
+                                <button href="#" class="btn btn-outline-primary w-100" id="fourth-city">********************</button>
                             </div>
                         </div>
                     </div>
