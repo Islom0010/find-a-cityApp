@@ -23,20 +23,47 @@
 
     <!-- Main starts -->
     <main class="position-relative">
-        <section class="container-fluid animate__animated" id="level">
+        <section class="container-fluid ">
             <div class="container mt-5">
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button" onclick="setFirstLevel()" id="first">First level</button>
-                    <button class="btn btn-primary" type="button" onclick="setSecondLevel()" id=" second ">Second level</button>
-                    <button class="btn btn-primary " type="button" onclick="setThirdLevel()" id="third">Third level</button>
+                <div class="d-grid gap-2 animate__animated d-none" id="level">
+                    <button class="btn btn-primary" type="button" onclick="setFirstLevel()" id="firstLevel">First level</button>
+                    <button class="btn btn-primary" type="button" onclick="setSecondLevel()" id=" secondLevel ">Second level</button>
+                    <button class="btn btn-primary " type="button" onclick="setThirdLevel()" id="thirdLevel">Third level</button>
+                </div>
+                <div id="steps" class="d-none flex-row justify-content-evenly align-items-center p-3 rounded-3 border-primary animate__animated w-50 mx-auto">
+                    <div class=" d-flex flex-row " id="first">
+                    </div>
+                    <div class="1.1 child"></div>
+                    <div class="1.2 child"></div>
+                    <div class="1.3 child"></div>
+                    <div class="1.4 child"></div>
+                    <div class="1.5 child"></div>
+                    <div class="1.6 child"></div>
+                    <div class=" d-flex flex-row" id="second">
+                    </div>
+                    <div class="2.1 child"></div>
+                    <div class="2.2 child"></div>
+                    <div class="2.3 child"></div>
+                    <div class="2.4 child"></div>
+                    <div class="2.5 child"></div>
+                    <div class="2.6 child"></div>
+                    <div class=" d-flex flex-row" id="third">
+                    </div>
+                    <div class="3.1 child"></div>
+                    <div class="3.2 child"></div>
+                    <div class="3.3 child"></div>
+                    <div class="3.4 child"></div>
+                    <div class="3.5 child"></div>
+                    <div class="3.6 child"></div>
                 </div>
             </div>
+
         </section>
-        <section class="container-fluid d-none mt-5 animate__animated animate__fadeInUp position-absolute top-50" id="city">
+        <section class="container-fluid  mt-5 animate__animated animate__fadeInUp position-absolute top-50 " id="city">
             <div class="container">
-                <div class="card w-50  my-3 mx-auto px-3" style="width: 18rem;">
+                <div class="card w-50  my-3 mx-auto px-3 border-primary border-2 overflow-hidden" style="width: 18rem;">
                     <h3 class="text-center my-2 ">Guess which city is it ?</h3>
-                    <div class="row mt-3" id="step">
+                    <div class="row mt-3 d-none" id="step">
                         <div class="col-lg-2 text-center">
                             <a href="" class="bg-dark rounded-circle text-decoration-none text-success px-lg-2" id="1">*</a>
                         </div>
@@ -79,10 +106,9 @@
     <!-- Main ends -->
 
     <!-- Script  -->
-    <script src=" ./scripts/index.js "></script>
+    <script src="./scripts/index.js"></script>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js " integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3 " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js " integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
